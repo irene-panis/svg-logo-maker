@@ -68,6 +68,7 @@ function init() {
           break;
         case "Circle":
           const newCircle = new shapes.Circle(data.text, data.textColor, data.shapeColor);
+          console.log(newCircle.render());
           writeToFile("examples/logo.svg", newCircle);
           break;
         case "Square":
